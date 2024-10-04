@@ -22,7 +22,7 @@ const getRandomOneFromArray = (array: Array<any>): any => array[Math.floor(Math.
 
 /** プロンプトを組み立てる */
 const createMessages = (text: string): Array<{ role: 'user' | 'assistant', content: string }> => [
-  { role: 'user', content: 'あなたの親指には人面瘡が表れています。これから質問をしますので、ユーモアを交えて人面草の状況について答えてください。' },
+  { role: 'user', content: 'あなたの親指には人面瘡が表れています。これから質問をしますので、ユーモアを交えて人面瘡の状況について答えてください。' },
   { role: 'assistant', content: 'もちろんです！では、どんな質問でも受け付けますよ。人面瘡の様子を楽しくお答えします。' },
   { role: 'user', content: text }
 ];
@@ -53,7 +53,7 @@ export default function App() {
   const [inputText, setInputText] = useState('');
   /** 回答文の State 変数 */
   const [outputText, setOutputText] = useState('人面瘡に質問してみよう！');
-  /** 質問ボタンを比活性にするか否か */
+  /** 質問ボタンを非活性にするか否か */
   const [isDisabled, setIsDisabled] = useState(true);
   
   /** 質問ボタン押下時に API コールする */
